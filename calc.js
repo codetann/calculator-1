@@ -20,8 +20,10 @@ reader.question("What would you like to calculate?", function (input) {
     console.log(num1 * num2);
   } else if (mathSymbol === "/") {
     console.log(num1 / num2);
+  } else if ("root") {
+    console.log(Math.sqrt(num1));
   } else {
-    console.log(Math.sqrt(num1 + num2));
+    console.log("Error - Enter a valid command");
   }
 
   // This line closes the connection to the command line interface.
